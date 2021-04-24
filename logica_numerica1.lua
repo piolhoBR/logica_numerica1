@@ -46,8 +46,8 @@ function f(var1,var2)
     end
 end
 
-a = 1 -- COLOCAR AQUI O PRIMEIRO VALOR DA FUNÇÃO
-b = 10 -- COLOCAR AQUI O SEGUNDO VALOR DA FUNÇÃO
+a = 1 -- (VALOR1) COLOCAR AQUI O PRIMEIRO VALOR DA FUNÇÃO
+b = 10 -- (VALOR2) COLOCAR AQUI O SEGUNDO VALOR DA FUNÇÃO
 
 f(a,b)
 for k,v in pairs(tabela) do
