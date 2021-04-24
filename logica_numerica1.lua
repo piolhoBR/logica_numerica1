@@ -48,6 +48,8 @@ end
 
 a = 1 -- COLOCAR AQUI O PRIMEIRO VALOR DA FUNÇÃO
 b = 10 -- COLOCAR AQUI O SEGUNDO VALOR DA FUNÇÃO
-for k,v in pairs(f(a,b)) do
+
+f(a,b)
+for k,v in pairs(tabela) do
 print(v)
 end
