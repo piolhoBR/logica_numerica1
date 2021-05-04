@@ -22,33 +22,20 @@
 tabela = {}
 
 function f(var1,var2)
-    if var1 < var2 then
+    if var1 <= var2 then
         repeat
-            divide = var1/2
-            verimpar = string.sub(divide, -1, -1)
-            verimparnum = tonumber(verimpar)
-            if verimparnum ~= 0 then
+            if var1%2 ~= 0 then
                 table.insert(tabela,var1)
             end
                 var1 = var1+1
         until var1 > var2
-            return tabela
-    elseif var1 == var2 then
-        divide = var1/2
-        verimpar = string.sub(divide, -1, -1)
-        verimparnum = tonumber(verimpar)
-        if verimparnum ~= 0 then
-            table.insert(tabela,var1)
-            return tabela
-        end
     else
         print("Valor 1 precisa ser menor ou igual ao valor 2!")
     end
 end
 
-a = 1 -- (VALOR1) COLOCAR AQUI O PRIMEIRO VALOR DA FUNÇÃO
-b = 10 -- (VALOR2) COLOCAR AQUI O SEGUNDO VALOR DA FUNÇÃO
-
+a = 1 -- COLOCAR AQUI O PRIMEIRO VALOR DA FUNÇÃO
+b = 1 -- COLOCAR AQUI O SEGUNDO VALOR DA FUNÇÃO
 f(a,b)
 for k,v in pairs(tabela) do
 print(v)
